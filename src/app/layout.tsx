@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
-import { ThemeProvider } from "@/context/ThemeContext";
-import { I18nProvider } from "@/context/I18nContext";
 import LiveChatButton from "@/components/LiveChatButton";
 
 export const metadata: Metadata = {
@@ -17,13 +15,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="tr">
       <body>
         <CartProvider>
-          <I18nProvider>
-            <ThemeProvider>
-              <Navbar />
-              {children}
-              <LiveChatButton />
-            </ThemeProvider>
-          </I18nProvider>
+          <Navbar />
+          
+            {children}
+          
+          <LiveChatButton />
         </CartProvider>
     </body>
     </html>

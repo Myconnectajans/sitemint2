@@ -13,9 +13,7 @@ const raleway = Raleway({
  * Intro: black screen with two sequential lines, sleek typography.
  * Repeats on every refresh.
  */
-const INTRO_DISABLED = process.env.NEXT_PUBLIC_INTRO_DISABLED === "1";
 export default function IntroOverlay() {
-  if (INTRO_DISABLED) return null;
   const [visible, setVisible] = useState(true);
   useEffect(()=>{
     try{
