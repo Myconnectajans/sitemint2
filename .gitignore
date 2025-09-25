@@ -1,13 +1,6 @@
-﻿# dependencies
-node_modules/
-# next
-.next/
-out/
-# env
-.env*
-# logs
-npm-debug.log*
-yarn-error.log*
-# editor
-.vscode/
+﻿node_modules
+.next
+.env
+.env.*
+dist
 .DS_Store

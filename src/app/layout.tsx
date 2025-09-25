@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import Navbar from "@/components/Navbar";
 import LiveChatButton from "@/components/LiveChatButton";
+import TawkWidget from "@/components/TawkWidget";
+
 
 export const metadata: Metadata = {
   title: "SiteMint",
@@ -21,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           
           <LiveChatButton />
         </CartProvider>
+        <TawkWidget />
     </body>
     </html>
   );
